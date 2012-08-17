@@ -1,0 +1,7 @@
+{
+    "name": "Github linter",
+    "description": "Hook for github, that listens to changes on a repository, lints the changed files, and commit directly the commit in case of linting error.",
+    "repository": "https://github.com/heroku/node-js-getting-started",
+    "keywords": ["node", "express", "github", "eslint", "javascript"],
+    "image": "heroku/nodejs"
+}
