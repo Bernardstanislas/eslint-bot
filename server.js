@@ -3,8 +3,9 @@ const app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-app.get('/', (request, response) => {
-    response.json({message: 'ok'});
+app.post('/', (request, response) => {
+    console.ingo('Got request', request);
+    response.end();
 });
 
 app.listen(app.get('port'), () => {
