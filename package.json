@@ -1,7 +1,7 @@
 {
   "name": "Focus-linter",
   "version": "0.1.5",
-  "description": "A sample Node.js app using Express 4",
+  "description": "A bot listenning to github webhooks, running ESLint and sending inline comments on every commits.",
   "main": "server.js",
   "scripts": {
     "start": "node_modules/.bin/babel-node server.js"
@@ -25,12 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/Bernardstanislas/linter-bot"
   },
+  "author": "Stanislas Bernard",
   "keywords": [
     "node",
     "heroku",
-    "express"
+    "express",
+    "eslint"
   ],
   "license": "MIT"
 }

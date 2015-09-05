@@ -1,7 +1,7 @@
 {
     "name": "Github linter",
-    "description": "Hook for github, that listens to changes on a repository, lints the changed files, and commit directly the commit in case of linting error.",
-    "repository": "https://github.com/heroku/node-js-getting-started",
+    "description": "A bot listenning to github webhooks, running ESLint and sending inline comments on every commits.",
+    "repository": "https://github.com/Bernardstanislas/linter-bot",
     "keywords": ["node", "express", "github", "eslint", "javascript"],
     "image": "heroku/nodejs"
 }
