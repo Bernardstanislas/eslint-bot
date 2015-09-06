@@ -178,7 +178,7 @@ app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 5000));
 
 app.post('/', ({body: payload}, response) => {
-    if (payload) {
+    if (payload && payload.commits) {
         treatPayload(payload);
     }
     response.end();
