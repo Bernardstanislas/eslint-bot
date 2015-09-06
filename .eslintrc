@@ -1,3 +1,5 @@
 {
-    "extends": "focus"
+    "rules": {
+        // Your ESLint configuration goes here
+    }
 }
