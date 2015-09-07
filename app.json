@@ -1,6 +1,6 @@
 {
     "name": "Github linter",
-    "description": "A bot listenning to github webhooks, running ESLint and sending inline comments on every commits.",
+    "description": "A bot listening to github webhooks, running ESLint and sending inline comments on every commits.",
     "repository": "https://github.com/Bernardstanislas/linter-bot",
     "keywords": ["node", "express", "github", "eslint", "javascript"],
     "image": "heroku/nodejs"
