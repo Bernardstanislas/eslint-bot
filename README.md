@@ -16,7 +16,7 @@ Clone the repo, then do a
 npm install
 ```
 
-*Optionnal* : create a new Github account for your bot, which will be used to author the comments.
+*Optional* : create a new Github account for your bot, which will be used to author the comments.
 
 ## Configuration
 
