@@ -1,7 +1,7 @@
 {
   "name": "ESLint-bot",
   "version": "0.2.0",
-  "description": "A bot listenning to github webhooks, running ESLint and sending inline comments on every commits.",
+  "description": "A bot listening to github webhooks, running ESLint and sending inline comments on every commits.",
   "main": "server.js",
   "scripts": {
     "start": "node_modules/.bin/babel-node server.js"
