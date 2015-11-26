@@ -6,7 +6,7 @@ Once plugged on your repo's webhooks, any pushed code will be linted, then comme
 
 ## Example
 
-You can see it in action on [this sample commit](https://github.com/KleeGroup/focus/commit/4cd9f0b9f7bd9a5662a294b52ff1704e7bdf9c9a).
+You can see it in action on [this sample commit](https://github.com/KleeGroup/focus-components/commit/00d404966cc5740d0ba1f3c613aae872c8ba24e2).
 
 ## Installation
 
