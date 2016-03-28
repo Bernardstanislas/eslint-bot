@@ -72,13 +72,11 @@ const filterJavascriptFiles = files => files.filter(({filename}) => filename.mat
  * @param  {String}   sha               Commit id
  */
 const downloadFile = (callback, {filename, patch, raw_url}, sha) => { // eslint-disable-line
-        
     github.repos.getContent({
         user: REPOSITORY_OWNER,
         repo: REPOSITORY_NAME,
         path: filename,
         ref: sha
-
     }, (error, data) => {
         if (error) {
             console.log(error);
@@ -86,7 +84,6 @@ const downloadFile = (callback, {filename, patch, raw_url}, sha) => { // eslint-
             callback(filename, patch, atob(data.content), sha);
         }
     });
-
 };
 
 /**
