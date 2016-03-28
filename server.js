@@ -140,7 +140,7 @@ const lintContent = (filename, patch, content, sha) => {
 const sendSingleComment = (filename, lineMap, {ruleId='Eslint', message, line}, sha) => {
     const diffLinePosition = lineMap[line];
     if (diffLinePosition) { // By testing this, we skip the linting messages related to non-modified lines.
-        const data ={
+        github.repos.createCommitComment({
             user: REPOSITORY_OWNER,
             repo: REPOSITORY_NAME,
             sha,
@@ -148,8 +148,7 @@ const sendSingleComment = (filename, lineMap, {ruleId='Eslint', message, line}, 
             commit_id: sha, // eslint-disable-line
             body: `**${ruleId}**: ${message}`,
             position: diffLinePosition
-        };
-        github.repos.createCommitComment(data);
+        });
     }
 };
 
