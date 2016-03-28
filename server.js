@@ -1,11 +1,10 @@
 // Dependencies
-
+const atob = require('atob');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const GitHubApi = require('github');
 const _ = require('lodash');
-const request = require('request');
 const ESLintCLIEngine = require('eslint').CLIEngine;
 
 // Config variables
@@ -73,12 +72,21 @@ const filterJavascriptFiles = files => files.filter(({filename}) => filename.mat
  * @param  {String}   sha               Commit id
  */
 const downloadFile = (callback, {filename, patch, raw_url}, sha) => { // eslint-disable-line
-    request(raw_url, (error, response, content) => {
+        
+    github.repos.getContent({
+        user: REPOSITORY_OWNER,
+        repo: REPOSITORY_NAME,
+        path: filename,
+        ref: sha
+
+    }, (error, data) => {
         if (error) {
             console.log(error);
+        }else{
+            callback(filename, patch, atob(data.content), sha);
         }
-        callback(filename, patch, content, sha);
     });
+
 };
 
 /**
