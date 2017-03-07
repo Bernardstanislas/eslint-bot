@@ -7,6 +7,8 @@ const GitHubApi = require('github');
 const _ = require('lodash');
 const ESLintCLIEngine = require('eslint').CLIEngine;
 
+const unknownVariable = xxx;
+
 // Config variables
 
 import {GITHUB_USERNAME, GITHUB_PASSWORD, REPOSITORY_OWNER, REPOSITORY_NAME, FILE_FILTER} from './config';
